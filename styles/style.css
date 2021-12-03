@@ -35,9 +35,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    align-items:center;
+    
+ 
 }
+
 
 section {
     background-color: var(--color5);
@@ -88,4 +90,13 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+skyline-dropdown{
+    width: 200px;
+    
+}
+
+.column{
+    width: 100
+    ;
 }

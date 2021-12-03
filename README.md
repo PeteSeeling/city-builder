@@ -26,14 +26,14 @@ Additional considerations:
 
 
 
-HTML Setup
+HTML SetupX
 1. Three dropdowns
 Why? We can tell which picture the user selected.
 How?
 dropdown.addEventListener('change', () => {})
 dropdown.value to get the selected image
 
-2. Three images
+2. Three imagesX
 Why? To display the select image
 How? myImg.src = './assets/${some-image}.jpeg'
 
