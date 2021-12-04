@@ -34,21 +34,50 @@ body {
     background-color: var(--color2);
 }
 
-main {
-    position: fixed;
-    display: grid;
+.column {
+    width:100%;
+    height:70%;
+    margin-top:40px;
     grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.column-left{  position: flex;
+    display: flex;
     grid-auto-rows: auto;
     gap: 20px;
-    justify-content: center;
-    width: 100%;
-    top:10%;
-    margin:auto;
-    padding:20px;
-    
+    justify-content: left;
+    width: 33%;
+    height:70%;
+    float: left;
 
+}
+.skyline-dropdown{
+    height:30px;
     
- 
+}
+.column-center{
+
+    display: flex;
+    grid-auto-rows: auto;
+    gap: 20px;
+    justify-content: left;
+    width: 30%;
+    height:70%;
+    float: center;
+    margin:auto;
+    border:10px;
+    padding:10px;
+}
+.column-right{
+    position: flex;
+    display: flex;
+    grid-auto-rows: auto;
+    gap: 20px;
+    justify-content: left;
+    width: 33%;
+    height:70%;
+    float: right;
 }
 
 
@@ -59,8 +88,8 @@ section {
     gap: 20px;
     justify-content: center;
     width: 100%;
-    bottom:30%;
-    margin:auto;
+    bottom:10%;
+    margin:20px;
     padding:20px;
   
 
@@ -106,28 +135,9 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-skyline-dropdown{
-    width: 200px;
-    
-}
-
-label{
-    display: flex;
-    flex-direction: row;
-    
-}
 
 
-image{
-    position: fixed;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    gap: 20px;
-    justify-content: center;
-    width: 100%;
-    top:10%;
-    margin:auto;
-    padding:20px;
 
-}
+
+
+
