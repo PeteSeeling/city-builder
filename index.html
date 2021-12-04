@@ -14,53 +14,59 @@
 
 <body>
     <main>
-       
+    
         <label>Skyline
             <select id ="skyline-dropdown" class="column">
                 <option value="Tianjin">Tianjin</option>
                 <option value="PortCity">Port City</option>
                 <option value="NewYork">New York</option>
             </select>
-        </label>
-
+      
+       
         <div class="skyline">
+            <image>
             <img id="skyline-image" />
+            </image>
             </div>
             
+        </label>
                 <label>Waterfront
                     <select id ="waterfront-dropdown" class="column">
                         <option value="Medieval">Medieval</option>
                         <option value="Norway">Norway</option>
                         <option value="Trondheim">Trondheim</option>
                     </select>
-                </label>
+                
 
                 <div class="waterfront">
                     <img id="waterfront-image" />
                     </div>
-
+                </label>
                     <label>Castle
                         <select id ="castle-dropdown" class="column">
                             <option value="Austrian">Austrian</option>
                             <option value="Lake">Lake</option>
                             <option value="Tower">Tower</option>
                         </select>
-                    </label>
+                    
     
                     <div class="castle">
                         <img id="castle-image" />
                         </div>
-
-                <label>
+                    </label>
+                    </main>
+                <section>
                     <div class="slogans"></div>
                     New slogans<input id="slogan-input" />
-                </label>
+                    <div id="slogan-output"></div>
+                
 
                 <button id="slogan-button">Add a Slogan</button>
             </div>
-
+            <div class="stats" id= "stats">Stats</div>
+        </section>
         </div>
-    </main>
+    
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
