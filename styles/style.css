@@ -7,9 +7,6 @@ body {
     --color3: white;
     --color4: white;
     --color5: white;
-
-    
-    
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -34,70 +31,28 @@ body {
     background-color: var(--color2);
 }
 
-.column {
-    width:100%;
-    height:70%;
-    margin-top:40px;
-    grid-template-columns: repeat(3, 1fr);
-    
-}
-
-.column-left{  position: flex;
+main {
     display: flex;
-    grid-auto-rows: auto;
-    gap: 20px;
-    justify-content: left;
-    width: 33%;
-    height:70%;
-    float: left;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--footer-height));
 }
-.skyline-dropdown{
-    height:30px;
-    
-}
-.column-center{
-
-    display: flex;
-    grid-auto-rows: auto;
-    gap: 20px;
-    justify-content: left;
-    width: 30%;
-    height:70%;
-    float: center;
-    margin:auto;
-    border:10px;
-    padding:10px;
-}
-.column-right{
-    position: flex;
-    display: flex;
-    grid-auto-rows: auto;
-    gap: 20px;
-    justify-content: left;
-    width: 33%;
-    height:70%;
-    float: right;
-}
-
 
 section {
-    position: fixed;
+    background-color: var(--color5);
+    max-width: 80%;
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    flex-direction: row;
     justify-content: center;
-    width: 100%;
-    bottom:10%;
-    margin:20px;
-    padding:20px;
-  
-
-
+    align-items: center;
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+    margin-top: 400px;
+    margin-bottom: var(--gutter);
+    border: solid 2px var(--color1);
+    
 }
-
-
-
 
 header {
     display: flex;
@@ -136,8 +91,43 @@ footer {
     box-shadow: var(--shadow);
 }
 
+.column{
 
+    display: flex;
+    flex-direction: row;
+    height:80%;
+    
 
+}
 
+.column-left, .column-center .column-right{
+display: flex;
+flex-direction: column;
+margin:10px;
+max-width: 300px;
+margin-top: 100px;
+margin-left: 100px;
+height:70%;
+}
+.column-left{
+    float:left;
+}
+.column-right{
+    float:right;
+}
 
+.button{
+    width: 100x;
+    height: 40px;
+    flex-direction: column;
+    background-color: rgb(255, 248, 248);
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+}
 
+.castle-image{
+ max-width: 200px;
+ max-height: 200px;
+}

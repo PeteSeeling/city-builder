@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <main>
         <div class="column">
         <div class="column-left">
         <label>Skyline
@@ -24,7 +25,8 @@
             <img id="skyline-image" />
             </div>
         </label>
-        
+
+        <div class="column">
         <div class="column-center">
                 <label>Waterfront
                     <select id ="waterfront-dropdown">
@@ -34,10 +36,12 @@
                     </select>
                     <img id="waterfront-image" />
                     </div>
+                    
                 </label>
+                
                 <div class="column-right">
                     <label>Castle
-                        <select id ="castle-dropdown" class="column">
+                        <select id ="castle-dropdown">
                             <option value="Austrian">Austrian</option>
                             <option value="Lake">Lake</option>
                             <option value="Tower">Tower</option>
@@ -54,12 +58,12 @@
                     <div id="slogan-output"></div>
                 
 
-                <button id="slogan-button">Add a Slogan</button>
+                <button id="slogan-button" class="button">Add a Slogan</button>
             </div>
             <div class="stats" id= "stats">Stats</div>
         </section>
         </div>
-    
+    </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
