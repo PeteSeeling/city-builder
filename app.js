@@ -49,8 +49,12 @@ sloganButton.addEventListener('click', () => {
     displaySlogans();
 });
 
+function createCountString(skylineCount, waterfrontCount, castleCount){
+    return `You have selected the skyline ${skylineCount} times, the waterfront ${waterfrontCount} times and the castle ${castleCount} times`;
+}
+
 function displayStats() {
-    statsEl.textContent = `You have selected the skyline ${skylineCount} times, the waterfront ${waterfrontCount} times and the castle ${castleCount} times`;
+    statsEl.textContent = createCountString(skylineCount, waterfrontCount, castleCount);
 }
 
 function displaySlogans() {
