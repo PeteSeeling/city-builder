@@ -1,3 +1,6 @@
+import { createCountString } from './test/utils.js';
+
+
 const skylineDropdown = document.getElementById('skyline-dropdown');
 const skylineImageEl = document.getElementById('skyline-image');
 const waterFrontDropdown = document.getElementById('waterfront-dropdown');
@@ -49,9 +52,6 @@ sloganButton.addEventListener('click', () => {
     displaySlogans();
 });
 
-export function createCountString(skylineCount, waterfrontCount, castleCount){
-    return `You have selected the skyline ${skylineCount} times, the waterfront ${waterfrontCount} times and the castle ${castleCount} times`;
-}
 
 function displayStats() {
     statsEl.textContent = createCountString(skylineCount, waterfrontCount, castleCount);
