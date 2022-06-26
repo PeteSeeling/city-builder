@@ -20,7 +20,6 @@ let slogans = [];
 
 // set event listeners 
 skylineDropdown.addEventListener('change', () => {
-
     const id = skylineDropdown.value;
     skylineCount++;
     skylineImageEl.src = `./assets/Skyline-${id}.jpg`;
@@ -28,7 +27,6 @@ skylineDropdown.addEventListener('change', () => {
 });
 
 waterFrontDropdown.addEventListener('change', () => {
-
     const id = waterFrontDropdown.value;
     waterfrontCount++;
     waterFrontImageEl.src = `./assets/waterfront-${id}.jpg`;
@@ -36,7 +34,6 @@ waterFrontDropdown.addEventListener('change', () => {
 });
 
 castleDropdown.addEventListener('change', () => {
-
     const id = castleDropdown.value;
     castleCount++;
     castleImageEl.src = `./assets/castle-${id}.jpg`;
@@ -45,30 +42,25 @@ castleDropdown.addEventListener('change', () => {
 
 sloganButton.addEventListener('click', () => {
     const newSlogan = sloganInputEl.value;
-
     slogans.push(newSlogan);
-
     sloganInputEl.value = '';
     displaySlogans();
 });
-
 
 function displayStats() {
     statsEl.textContent = createCountString(skylineCount, waterfrontCount, castleCount);
 }
 
 function displaySlogans() {
-  
-
     for (let slogan of slogans){
         const p = document.createElement('p');
 
         p.classList.add('add-slogan');
         p.textContent = slogan;
+
         sloganOutputEl.append(p);
         slogans = [];
-        sloganInputEl.value = '';
-       
+        sloganInputEl.value = ''; 
     }
 }
   // get user input
